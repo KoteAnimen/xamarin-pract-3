@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_pract_3.MainPage">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Пользователь" FontSize="14" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Авторизация" FontSize="Title" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Пароль" FontSize="14" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="ent_UserName" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="ent_Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Button x:Name="btn_Accept" Text="Войти" Clicked="btn_Accept_Clicked" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btn_Cancel" Text="Отмена" Clicked="btn_Cancel_Clicked" HorizontalOptions="FillAndExpand"/>            
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <Button x:Name="btn_Exit" Text="Выход" Clicked="btn_Exit_Clicked"/>
+        </StackLayout>        
+    </StackLayout>
+
+</ContentPage>
